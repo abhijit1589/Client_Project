@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add any additional custom global styles below */
+body {
+  background-color: var(--wp--preset--color--base-2) !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+section {
+  padding-top: 100px;
+}
+.website-name {
+  font-family: "Roboto Condensed", serif;
+  font-optical-sizing: auto; /* Optional: Change to your preferred font */
+  font-size: 1.5rem; /* Adjust the size as needed */
+  font-weight: 600; /* Adjust the boldness */
+  color: #131314; /* Change to your preferred color */
+  text-decoration: none; /* Remove default underline */
+  position: relative; /* Needed for the ::after element */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.website-name::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px; /* Adjust the thickness of the underline */
+  display: block;
+  bottom: 0; /* Position the underline directly under the text */
+  left: 0; /* Ensure the underline starts from the left */
+  background: #f6cf41; /* Change to your preferred underline color */
+  transition: width 0.4s ease; /* Smooth transition for the underline */
+}
+
+.website-name:hover::after {
+  width: 100%;
+}
+.popup-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 300px;
+  text-align: center;
+  border-radius: 8px;
+}

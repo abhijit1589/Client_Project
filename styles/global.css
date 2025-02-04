@@ -1,0 +1,38 @@
+/* Global Styles */
+/* styles.css */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Ensure body takes full height */
+  background-color: var(--wp--preset--color--base-2) !important; /* Add your background image here */
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the background image */
+  background-repeat: repeat; /* Prevent the background from repeating */
+  font-family: var(--wp--preset--font-family--montserrat); /* Optional: Set a default font */
+  -ms-overflow-style: none;
+
+}
+
+
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: var(--wp--preset--font-family--montserrat);
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+span {
+  font-family: var(--wp--preset--font-family--montserrat);
+}
